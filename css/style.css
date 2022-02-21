@@ -331,6 +331,7 @@ footer a:hover {
   }
   .card__description {
     text-align: justify;
+    margin-left: 0px !important;
   }
   .card__rectangulo {
     display: none;
