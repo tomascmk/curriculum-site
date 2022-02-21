@@ -218,9 +218,14 @@ footer a:hover {
   width: auto;
 }
 
-#profile-label, .trabajo-label, .educacion-label {
+#profile-label, .trabajo-label, .educacion__label {
   font-size: 40px !important;
   font-weight: 600 !important;
+}
+
+.educacion__label__clarification {
+  font-size: 40px !important;
+  font-weight: 300 !important;
 }
 
 @media (max-width: 760px) {
@@ -230,7 +235,7 @@ footer a:hover {
   }
 
   .description-text {
-    width: 90vw !important;
+    width: 100vw !important;
   }
 
   .description-img {
@@ -301,6 +306,55 @@ footer a:hover {
 }
 
 /* EXPERIENCIA STYLE */
+@media (max-width: 640px) {
+  .card__detalle {
+    display: grid;
+    grid: "card-imagenes" "card-titulo" "card-description" !important;
+    align-items: top;
+    justify-content: center;
+  }
+  .card__imagenes {
+    justify-content: center !important;
+    margin-bottom: 30px;
+  }
+  .card__imagen {
+    height: 60px !important;
+  }
+  .card__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    margin: 0px !important;
+  }
+  .card__titulo__dots {
+    display: none;
+  }
+  .card__description {
+    text-align: justify;
+  }
+  .card__rectangulo {
+    display: none;
+  }
+
+  .educacion__label {
+    text-align: center !important;
+  }
+  .educacion__label__clarification {
+    display: none !important;
+  }
+}
+.card__detalle {
+  width: 100%;
+  display: grid;
+  grid: "card-imagenes card-titulo" "card-imagenes card-description";
+  align-items: top;
+}
+.card__container__titulo {
+  grid-area: card-titulo;
+}
+.card__container__descripcion {
+  grid-area: card-decription;
+}
 .card__description {
   display: flex;
   align-items: center;
@@ -344,17 +398,13 @@ footer a:hover {
   height: auto;
   margin-left: 15px;
 }
-.card__detalle {
-  width: 100%;
-  display: flex;
-  align-items: top;
-}
 .card__imagenes {
   height: 55px;
   min-width: 125px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  grid-area: card-imagenes;
 }
 .card__titulo {
   font-weight: 300;
