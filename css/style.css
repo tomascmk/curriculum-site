@@ -196,7 +196,7 @@ footer a:hover {
 #profile-banner {
   background-color: #000000;
   color: #ffffff;
-  height: 40vh;
+  height: 30vh;
   min-height: 200px;
   display: flex;
   flex-direction: column;
@@ -245,7 +245,7 @@ footer a:hover {
   }
 
   #profile-banner {
-    height: 30vh;
+    height: 25vh !important;
     min-height: 120px;
   }
 
