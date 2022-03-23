@@ -67,7 +67,7 @@ footer a:hover {
   z-index: 999;
   justify-content: center;
   align-items: center;
-  animation: loading-screen 0s ease-in 10s;
+  animation: loading-screen 0s ease-in 0s;
   animation-fill-mode: forwards;
   animation-direction: alternate;
   animation-iteration-count: 1;
